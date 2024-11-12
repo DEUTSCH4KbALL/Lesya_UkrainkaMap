@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <link rel="shortcut icon" href="./img/Header/photo_2024-10-22_14-08-02.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ментальна карта - Леся Українка</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        #mindmap {
+            width: 100%;
+            /* Обеспечиваем адаптивность изображения */
+            height: auto;
+        }
+
+        .magnifier {
+            position: absolute;
+            border: 2px solid #000000;
+            border-radius: 50%;
+            width: 800px;
+            /* Размер увеличительного стекла */
+            height: 800px;
+            /* Размер увеличительного стекла */
+            overflow: hidden;
+            display: none;
+            /* Скрываем по умолчанию */
+            pointer-events: none;
+            /* Игнорируем события мыши */
+            background-repeat: no-repeat;
+            background-size: 200%;
+            /* Увеличиваем размер фона */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Леся Українка</h1>
+        <h2>Хто вона: Леся Українка</h2>
+        <p>Видатна українська поетеса, драматург і громадська діячка</p>
+        <div>
+            <nav class="tab-bar">
+                <ul class="tab-bar__tabs">
+                    <li class="tab-bar__tab">
+                        <a class="tab-bar__tab-link" href="./main.html" aria-current="page">
+                            <svg class="tab-bar__tab-icon tab-bar__tab-icon--home" viewBox="0 0 24 24" width="24px"
+                                height="24px" aria-hidden="true">
+                                <g class="tab-bar__tab-icon-1" fill="var(--focus-t)" stroke="currentColor"
+                                    stroke-width="2" stroke-linejoin="round">
+                                    <polygon points="12 1,23 10,23 23,16 23,16 14,8 14,8 23,1 23,1 10" />
+                                </g>
+                            </svg>
+                            <span class="tab-bar__tab-name">Home</span>
+                        </a>
+                    </li>
+                    <li class="tab-bar__tab">
+                        <a class="tab-bar__tab-link" href="./gallery.html">
+                            <svg class="tab-bar__tab-icon tab-bar__tab-icon--videos" viewBox="0 0 24 24" width="24px"
+                                height="24px" aria-hidden="true">
+                                <g fill="var(--focus-t)" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line class="tab-bar__tab-icon-1" x1="3" y1="1" x2="21" y2="1" />
+                                    <line x1="2" y1="5" x2="22" y2="5" />
+                                    <g class="tab-bar__tab-icon-2" transform="translate(1,9)">
+                                        <polygon points="9 3,15 7.5,9 11" />
+                                        <rect rx="2" ry="2" width="22" height="14" />
+                                        <polygon class="tab-bar__tab-icon-3" opacity="0" points="9 3,15 7.5,9 11" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <span class="tab-bar__tab-name">Videos</span>
+                        </a>
+                    </li>
+                    <li class="tab-bar__tab">
+                        <a class="tab-bar__tab-link" href="./biography.html">
+                            <svg class="tab-bar__tab-icon tab-bar__tab-icon--books" viewBox="0 0 24 24" width="24px"
+                                height="24px" aria-hidden="true">
+                                <g class="tab-bar__tab-icon-1" fill="var(--focus-t)" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect class="tab-bar__tab-icon-2" x="1" y="1" rx="2" ry="2" width="11"
+                                        height="19" />
+                                    <rect class="tab-bar__tab-icon-3" x="12" y="1" rx="2" ry="2" width="11"
+                                        height="19" />
+                                    <line x1="12" y1="21" x2="12" y2="23" />
+                                </g>
+                            </svg>
+                            <span class="tab-bar__tab-name">Books</span>
+                        </a>
+                    </li>
+                    <li class="tab-bar__tab">
+                        <a class="tab-bar__tab-link" href="./profile.html">
+                            <svg class="tab-bar__tab-icon tab-bar__tab-icon--profile" viewBox="0 0 24 24" width="24px"
+                                height="24px" aria-hidden="true">
+                                <g fill="var(--focus-t)" stroke="currentColor" stroke-width="2">
+                                    <circle class="tab-bar__tab-icon-1" cx="12" cy="6.5" r="5.5" />
+                                    <path
+                                        d="M20.473,23H3.003c-1.276,0-2.228-1.175-1.957-2.422,.705-3.239,3.029-8.578,10.693-8.578s9.987,5.336,10.692,8.575c.272,1.248-.681,2.425-1.959,2.425Z" />
+                                </g>
+                            </svg>
+                            <span class="tab-bar__tab-name">Profile</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Ментальна карта</h2>
+        <img src="./img/MindMap/Untitled.jpg" alt="Mind Map" id="mindmap">
+        <div id="magnifier" class="magnifier"></div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mindmap = document.getElementById('mindmap');
+            const magnifier = document.getElementById('magnifier');
+
+            mindmap.addEventListener('mousemove', (e) => {
+                const rect = mindmap.getBoundingClientRect();
+                const x = e.clientX - rect.left; // Позиция курсора относительно картинки
+                const y = e.clientY - rect.top;
+
+                // Устанавливаем позицию увеличительного стекла
+                magnifier.style.left = `${e.clientX - 50}px`; // Центрируем увеличительное стекло по курсору
+                magnifier.style.top = `${e.clientY - 50}px`;
+                magnifier.style.backgroundImage = `url(${mindmap.src})`; // Устанавливаем изображение
+                magnifier.style.backgroundPosition = `-${x}px -${y}px`; // Устанавливаем позицию фона
+                magnifier.style.display = 'block'; // Показываем увеличительное стекло
+            });
+
+            mindmap.addEventListener('mouseleave', () => {
+                magnifier.style.display = 'none'; // Скрываем увеличительное стекло при выходе курсора
+            });
+        });
+    </script>
+    <h3> Радимо натиснути <br> "Ctrl +" для збільшення сторінки або <br> "Ctrl -" для зменшення</h3>
+</body>
+
+</html>
+
+<!--<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <link rel="shortcut icon" href="./img/Header/photo_2024-10-22_14-08-02.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Біографія - Леся Українка</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        #mindmap {
+            width: 100%;
+            /* Обеспечиваем адаптивность изображения */
+            height: auto;
+        }
+
+        .magnifier {
+            position: absolute;
+            border: 3px solid #000;
+            border-radius: 50%;
+            width: 100px;
+            /* Размер увеличительного стекла */
+            height: 100px;
+            /* Размер увеличительного стекла */
+            overflow: hidden;
+            display: none;
+            /* Скрываем по умолчанию */
+            pointer-events: none;
+            /* Игнорируем события мыши */
+            background-repeat: no-repeat;
+            background-size: 200%;
+            /* Увеличиваем размер фона */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Леся Українка</h1>
+        <h2>Хто вона: Леся Українка</h2>
+        <p>Видатна українська поетеса, драматург і громадська діячка</p>
+    </header>
+
+    <main>
+        <h2>Біографія</h2>
+        <img src="./img/MindMap/Untitled.jpg" alt="Mind Map" id="mindmap">
+        <div id="magnifier" class="magnifier"></div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mindmap = document.getElementById('mindmap');
+            const magnifier = document.getElementById('magnifier');
+
+            mindmap.addEventListener('mousemove', (e) => {
+                const rect = mindmap.getBoundingClientRect();
+                const x = e.clientX - rect.left; // Позиция курсора относительно картинки
+                const y = e.clientY - rect.top;
+
+                magnifier.style.left = `${e.pageX - 50}px`; // Позиция увеличительного стекла
+                magnifier.style.top = `${e.pageY - 50}px`;
+                magnifier.style.backgroundImage = `url(${mindmap.src})`; // Устанавливаем изображение
+                magnifier.style.backgroundPosition = `-${x}px -${y}px`; // Устанавливаем позицию фона
+                magnifier.style.display = 'block'; // Показываем увеличительное стекло
+            });
+
+            mindmap.addEventListener('mouseleave', () => {
+                magnifier.style.display = 'none'; // Скрываем увеличительное стекло при выходе курсора
+            });
+        });
+    </script>
+</body>
+
+</html>-->

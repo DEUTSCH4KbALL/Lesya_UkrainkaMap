@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <link rel="shortcut icon" href="./img/Header/photo_2024-10-22_14-08-02.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Біографія - Леся Українка</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js/script.js" defer></script>
+    <style>
+        .slider {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .left,
+        .right {
+            cursor: pointer;
+        }
+
+        .blinking-arrow {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Леся Українка</h1>
+        <h2>Хто вона: Леся Українка</h2>
+        <p>Видатна українська поетеса, драматург і громадська діячка</p>
+        <div>
+            <nav class="tab-bar">
+                <ul class="tab-bar__tabs">
+                    <li class="tab-bar__tab">
+                        <a class="tab-bar__tab-link" href="./main.html" aria-current="page">
+                            <svg class="tab-bar__tab-icon tab-bar__tab-icon--home" viewBox="0 0 24 24" width="24px"
+                                height="24px" aria-hidden="true">
+                                <g class="tab-bar__tab-icon-1" fill="var(--focus-t)" stroke="currentColor"
+                                    stroke-width="2" stroke-linejoin="round">
+                                    <polygon points="12 1,23 10,23 23,16 23,16 14,8 14,8 23,1 23,1 10" />
+                                </g>
+                            </svg>
+                            <span class="tab-bar__tab-name">Home</span>
+                        </a>
+                    </li>
+                    <li class="tab-bar__tab">
+                        <a class="tab-bar__tab-link" href="./gallery.html">
+                            <svg class="tab-bar__tab-icon tab-bar__tab-icon--videos" viewBox="0 0 24 24" width="24px"
+                                height="24px" aria-hidden="true">
+                                <g fill="var(--focus-t)" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <line class="tab-bar__tab-icon-1" x1="3" y1="1" x2="21" y2="1" />
+                                    <line x1="2" y1="5" x2="22" y2="5" />
+                                    <g class="tab-bar__tab-icon-2" transform="translate(1,9)">
+                                        <polygon points="9 3,15 7.5,9 11" />
+                                        <rect rx="2" ry="2" width="22" height="14" />
+                                        <polygon class="tab-bar__tab-icon-3" opacity="0" points="9 3,15 7.5,9 11" />
+                                    </g>
+                                </g>
+                            </svg>
+                            <span class="tab-bar__tab-name">Videos</span>
+                        </a>
+                    </li>
+                    <li class="tab-bar__tab">
+                        <a class="tab-bar__tab-link" href="./biography.html">
+                            <svg class="tab-bar__tab-icon tab-bar__tab-icon--books" viewBox="0 0 24 24" width="24px"
+                                height="24px" aria-hidden="true">
+                                <g class="tab-bar__tab-icon-1" fill="var(--focus-t)" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect class="tab-bar__tab-icon-2" x="1" y="1" rx="2" ry="2" width="11"
+                                        height="19" />
+                                    <rect class="tab-bar__tab-icon-3" x="12" y="1" rx="2" ry="2" width="11"
+                                        height="19" />
+                                    <line x1="12" y1="21" x2="12" y2="23" />
+                                </g>
+                            </svg>
+                            <span class="tab-bar__tab-name">Books</span>
+                        </a>
+                    </li>
+                    <li class="tab-bar__tab">
+                        <a class="tab-bar__tab-link" href="./profile.html">
+                            <svg class="tab-bar__tab-icon tab-bar__tab-icon--profile" viewBox="0 0 24 24" width="24px"
+                                height="24px" aria-hidden="true">
+                                <g fill="var(--focus-t)" stroke="currentColor" stroke-width="2">
+                                    <circle class="tab-bar__tab-icon-1" cx="12" cy="6.5" r="5.5" />
+                                    <path
+                                        d="M20.473,23H3.003c-1.276,0-2.228-1.175-1.957-2.422,.705-3.239,3.029-8.578,10.693-8.578s9.987,5.336,10.692,8.575c.272,1.248-.681,2.425-1.959,2.425Z" />
+                                </g>
+                            </svg>
+                            <span class="tab-bar__tab-name">Profile</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section8">
+            <h2>Біографія</h2>
+            <div class="slider">
+                <div class="left">
+                    <img src="./img/content/slider-section/sl_arrow_left.png" alt="" id="left-arrow"
+                        class="blinking-arrow">
+                </div>
+                <div class="container">
+                    <div class="wrapper" id="image-wrapper">
+                        <img src="./img/Леся-Українка.jpg" alt="" class="slider-image">
+                        <p>Леся Українка (Лариса Петрівна Косач) народилася 25 лютого 1871 року в місті
+                            Новоград-Волинський.</p>
+                        <img src="./img/Lesya-Ukrayinka-Prosvita-850x540.jpg" alt="" class="slider-image">
+                        <p>Вона була однією з найзначніших постатей української літератури.</p>
+                        <img src="./img/lesia-ukrainka-1.jpg" alt="" class="slider-image">
+                        <p>Її творчість охоплює поезію, драматургію та прозу.</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="./img/content/slider-section/sl_arrow_right.png" alt="" id="right-arrow"
+                        class="blinking-arrow">
+                </div>
+            </div>
+        </section>
+    </main>
+    <section2 class="biography">
+        <h2 class="toggle-header"
+            data-tooltip="Леся Українка (справжнє ім'я Лариса Петрівна Косач) народилася 25 лютого 1871 року в місті Новоград-Волинський.">
+            Хто вона?</h2>
+        <p class="toggle-content">Леся Українка була видатною українською поетесою, драматургом і громадською діячкою.
+            Лариси Коваленко. Вона народилася 25 лютого 1871 року в місті Новоград-Волинський. Леся Українка була однією
+            з найвпливовіших поетес України, її твори відзначені глибокими емоціями
+            та любов'ю до рідної землі.Донька Прометея є однією з найзначніших постатей української літератури
+        </p>
+        <h2 class="toggle-header" data-tooltip="Леся Українка є однією з найзначніших постатей української літератури.">
+            Її творчість</h2>
+        <p class="toggle-content">Її творчість охоплює поезію, драматургію та прозу. Вона писала про важливі соціальні
+            та політичні проблеми свого часу, а також про любов, природу та людські почуття.</p>
+        <h2 class="toggle-header"
+            data-tooltip="Її найвідоміші твори: 'Надія', 'Хотіла б я піснею стати', 'Давня весна', 'Лісова пісня'.">
+            Відомі твори</h2>
+        <p class="toggle-content">Леся Українка померла 1 серпня 1913 року, залишивши після себе багатий спадок, який
+            продовжує надихати нові покоління українців.Її найвідоміші твори: 'Надія', 'Хотіла б я піснею стати', 'Давня
+            весна', 'Лісова пісня', "Мелодія", "Кассандра" та "Бояриня".</p>
+    </section2>
+    <div id="tooltip" class="tooltip"></div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        h2 {
+            margin-top: 10px;
+            cursor: pointer;
+            /* Додаємо курсор для заголовків */
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .biography {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .toggle-content {
+            display: none;
+            /* Приховуємо контент за замовчуванням */
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1000;
+            display: none;
+            /* Скрыть по умолчанию */
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const headers = document.querySelectorAll('.toggle-header');
+            const tooltip = document.getElementById('tooltip');
+
+            if (!tooltip) {
+                console.error('Tooltip element not found');
+                return; // Прекращаем выполнение, если элемент не найден
+            }
+
+            headers.forEach(header => {
+                // Додаємо обробник події для наведення курсора
+                header.addEventListener('mouseenter', (event) => {
+                    const tooltipText = header.getAttribute('data-tooltip');
+                    tooltip.innerText = tooltipText;
+
+                    const rect = header.getBoundingClientRect();
+                    tooltip.style.left = `${rect.left + window.scrollX}px`;
+                    tooltip.style.top = `${rect.bottom + window.scrollY + 5}px`;
+
+                    tooltip.style.display = 'block';
+                });
+
+                // Додаємо обробник події для виходу курсора
+                header.addEventListener('mouseleave', () => {
+                    tooltip.style.display = 'none';
+                });
+
+                header.addEventListener('click', () => {
+                    const content = header.nextElementSibling;
+
+                    // Перемикаємо видимість контенту
+                    if (content) {
+                        if (content.style.display === "none" || content.style.display === "") {
+                            content.style.display = "block";
+                            content.style.opacity = 0; // Початкова непрозорість
+                            let opacity = 0;
+
+                            // Анімація плавного появи
+                            const fadeIn = setInterval(() => {
+                                if (opacity >= 1) {
+                                    clearInterval(fadeIn);
+                                }
+                                content.style.opacity = opacity;
+                                opacity += 0.1; // Збільшуємо непрозорість
+                            }, 50); // Інтервал анімації
+                        } else {
+                            // Анімація плавного зникнення
+                            let opacity = 1;
+                            const fadeOut = setInterval(() => {
+                                if (opacity <= 0) {
+                                    clearInterval(fadeOut);
+                                    content.style.display = "none"; // Сховати після завершення анімації
+                                }
+                                content.style.opacity = opacity;
+                                opacity -= 0.1; // Зменшуємо непрозорість
+                            }, 50); // Інтервал анімації
+                        }
+                    } else {
+                        console.error('Content element not found for header:', header);
+                    }
+                });
+            });
+
+            // Ініціалізація: приховати контент
+            document.querySelectorAll('.toggle-content').forEach(content => {
+                content.style.display = "none"; // Сховати контент за замовчуванням
+                content.style.opacity = 0; // Початкова непрозорість
+            });
+        });
+    </script>
+    <section class="articles-research">
+        <h2>Статті та дослідження про Лесю Українку</h2>
+        <p>У цьому розділі ви знайдете наукові статті та дослідження, присвячені творчості та впливу Лесі Українки на
+            українську культуру.</p>
+
+        <article class="research-item">
+            <h3>Леся Українка: Життя та творчість</h3>
+            <p>Автор: Іваненко О. О. <br>
+                У цій статті розглядається життєвий шлях Лесі Українки, її основні твори та вплив на українську
+                літературу.</p>
+            <a href="https://dovidka.biz.ua/lesya-ukrayinka-biografiya-korotko/" class="read-more">Читати більше</a>
+        </article>
+
+        <article class="research-item">
+            <h3>Символізм у поезії Лесі Українки</h3>
+            <p>Автор: Петренко А. В. <br>
+                Досліджується використання символізму у творчості Лесі Українки та його значення для розвитку
+                української поезії.</p>
+            <a href="https://studentam.net.ua/content/view/8307/97/" class="read-more">Читати більше</a>
+        </article>
+
+        <article class="research-item">
+            <h3>Леся Українка та її вплив на сучасну українську літературу</h3>
+            <p>Автор: Сидоренко М. І. <br>
+                У статті аналізується вплив Лесі Українки на сучасних українських письменників та літературні течії.</p>
+            <a href="https://ukrdovidnyk.com.ua/znachennia-tvorchosti-lesi-ukrainky/" class="read-more">Читати
+                більше</a>
+        </article>
+
+        <article class="research-item">
+            <h3>Творчість Лесі Українки в контексті європейської літератури</h3>
+            <p>Автор: Коваленко Т. П. <br>
+                Досліджується місце Лесі Українки в європейському літературному контексті та її взаємодія з іншими
+                культурами.</p>
+            <a href="https://www.radiosvoboda.org/a/lesia-ukrainka-europa-ukrayinska-literatura/31087950.html"
+                class="read-more">Читати більше</a>
+        </article>
+    </section>
+
+    <script>
+        const wrapper = document.getElementById('image-wrapper');
+        const leftArrow = document.getElementById('left-arrow');
+        const rightArrow = document.getElementById('right-arrow');
+        const images = document.querySelectorAll('.slider-image');
+
+        let currentIndex = 0;
+        function updateImages() {
+            images.forEach((img, index) => {
+                img.style.display = index === currentIndex ? 'block' : 'none';
+            });
+        }
+
+        leftArrow.addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+            updateImages();
+        });
+
+        rightArrow.addEventListener('click', () => {
+            currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+            updateImages();
+        });
+
+        updateImages(); // Початковий виклик для відображення першого зображення
+    </script>
+    <h1>Ось деякі твори Лесі Українки</h1>
+    <h3>Надія</h3>
+    <h4>Ні долі, ні волі у мене нема,<br>
+        Зосталася тільки надія одна: <br>
+        Надія вернутись ще раз на Вкраїну, <br>
+        Поглянути ще раз на рідну країну, <br>
+        Поглянути ще раз на синій Дніпро, – <br>
+        Там жити чи вмерти, мені всеодно; <br>
+        Поглянути ще раз на степ, могилки, <br>
+        Востаннє згадати палкії гадки… <br>
+        Ні долі, ні волі у мене нема, <br>
+        Зосталася тільки надія одна.
+    </h4>
+
+    <div class="video-container">
+        <h1>Відео з твором</h1>
+        <video width="640" height="360" controls>
+            <source src="./video_2/Надія_Леся_Українка_Перша_поезія.mp4" type="video/mp4">
+            Ваш браузер не підтримує відео тег.
+        </video>
+    </div>
+
+    <h3>Хотіла б я піснею стати...</h3>
+    <h4>Хотіла б я піснею стати
+        У сюю хвилину ясну, <br>
+        Щоб вільно по світі літати, <br>
+        Щоб вітер розносив луну. <br>
+        <br>
+        Щоб геть аж під яснії зорі <br>
+        Полинути співом дзвінким, <br>
+        Упасти на хвилі прозорі, <br>
+        Буяти над морем хибким. <br>
+        <br>
+        Лунали б тоді мої мрії <br>
+        І щастя моє таємне, <br>
+        Ясніші, ніж зорі яснії, <br>
+        Гучніші, ніж море гучне.
+    </h4>
+    <div class="video-container">
+        <h1>Відео з твором</h1>
+        <video width="640" height="360" controls>
+            <source src="./video3/Леся_Українка_—_Хотіла_б_я_піснею_стати_аудіокнига.mp4" type="video/mp4">
+            Ваш браузер не підтримує відео тег.
+        </video>
+    </div>
+
+    <h3>пісня «Вже сонечко в море сіда…»</h3>
+    <h4>Вже сонечко в море сіда; <br>
+        У тихому морі темніє; <br>
+        Прозора, глибока вода, <br>
+        Немов оксамит, зеленіє. <br>
+        <br>
+        На хвилях зелених тремтять <br>
+        Червонії іскри блискучі <br>
+        І ясним огнем миготять, <br>
+        Мов блискавка з темної тучі. <br>
+        <br>
+        А де корабель ваш пробіг, <br>
+        Дорога там довга й широка <br>
+        Біліє, як мармур, як сніг, <br>
+        І ледве примітне для ока. <br>
+        <br>
+        Рожевіє пінистий край; <br>
+        То іскра заблисне, то згасне… <br>
+        Ось промінь остатній! Прощай, <br>
+        Веселеє сонечко ясне! <br>
+    </h4>
+
+    <div class="video-container">
+        <h1>Відео з твором</h1>
+        <video width="640" height="360" controls>
+            <source src="./video4/Сонечко.mp4" type="video/mp4">
+            Ваш браузер не підтримує відео тег.
+        </video>
+    </div>
+    <h3>Давня весна</h3>
+    <h4>Була весна весела, щедра, мила,<br>
+        Промінням грала, сипала квітки,<br>
+        Вона летіла хутко, мов стокрила,<br>
+        За нею вслід співучії пташки!<br>
+        <br>
+        Все ожило, усе загомоніло –<br>
+        Зелений шум, веселая луна!<br>
+        Співало все, сміялось і бриніло,<br>
+        А я лежала хвора й самотна.<br>
+        <br>
+        Я думала: "Весна для всіх настала,<br>
+        Дарунки всім несе вона, ясна,<br>
+        Для мене тільки дару не придбала,<br>
+        Мене забула радісна весна".<br>
+        <br>
+        Ні, не забула! У вікно до мене<br>
+        Заглянули від яблуні гілки,<br>
+        Замиготіло листячко зелене,<br>
+        Посипались білесенькі квітки.<br>
+        <br>
+        Прилинув вітер, і в тісній хатині<br>
+        Він про весняну волю заспівав,<br>
+        А з ним прилинули пісні пташині,<br>
+        І любий гай свій відгук з ним прислав.<br>
+        <br>
+        Моя душа ніколи не забуде <br>
+        Того дарунку, що весна дала; <br>
+        Весни такої не було й не буде, <br>
+        Як та була, що за вікном цвіла. <br>
+        <br>
+        1894 року.<br>
+    </h4>
+    <div class="video-container">
+        <h1>Відео з твором</h1>
+        <video width="640" height="360" controls>
+            <source src="./video5/Весна.mp4" type="video/mp4">
+            Ваш браузер не підтримує відео тег.
+        </video>
+    </div>
+    <a href="./mindmap.html"><button>Ментальна карта на тему: ,,Хто вона: Леся Українка,,</button></a>
+    <footer>
+        <p>&copy; 2024 Леся Українка</p>
+    </footer>
+</body>
+
+</html>
